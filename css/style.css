@@ -1,13 +1,43 @@
-.root{
-    --primary-dark: brown;
-    --primary-light: tan;
+:root{
+    --primary_dark: brown;
+    --primary_light: tan;
+    --secondary_dark: maroon;
+    --secondary_light: white;
+    --shadow_dark: darkred;
 }
 
 
 body{
     width: 90%;
     margin: 0 auto;
-    background-color: var(--primary-light);
-    color: var(--primary-dark);
+    background-color:  var(--primary_dark);
+    color: var(--primary_light);
+    font-family: 'Bubblegum Sans', cursive;
 }
 
+.tokenDiv{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@keyframes tokenSectionOpacity {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+.tokenSection{
+    background-color: var(--secondary_light);
+    color: var(--secondary_dark);
+    display: inline-block;
+    width: 250px;
+    border: 1px solid var(--primary_dark);
+    border-radius: 15px;
+    text-align: center;
+    animation: tokenSectionOpacity 5s;
+}
+
+.tokenImg{
+    border: 3px solid var(--primary_dark);
+    border-radius: 10px;
+    box-shadow: 3px 3px var(--shadow_dark);
+}

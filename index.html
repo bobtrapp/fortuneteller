@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <title>Fortune Teller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/token.js"></script>
     <script src="js/app.js"></script>
@@ -10,6 +16,15 @@
     <header>
       <h1>Fortune Teller</h1>
     </header>
-    <main></main>
+    <main>
+      <fieldset>
+        <label for="question">
+          Tell me, traveler, what is your question?
+        </label>
+        <input type="text" id="question" />
+        <button id="askButton">Ask</button>
+      </fieldset>
+      <section id="responseSection"></section>
+    </main>
   </body>
 </html>
