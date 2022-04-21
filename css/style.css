@@ -19,8 +19,19 @@ body {
 h1,
 h2 {
     text-shadow: 1px 1px var(--shadow_dark);
+    letter-spacing: 3px;
 }
 
+input[type=text] {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+fieldset {
+    border-radius: 10px;
+    font-size: 1.5em;
+}
 
 .tokenDiv {
     display: grid;
