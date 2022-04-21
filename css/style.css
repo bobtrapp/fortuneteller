@@ -1,43 +1,62 @@
-:root{
-    --primary_dark: brown;
+:root {
+    --primary_dark: rgb(111, 22, 22);
     --primary_light: tan;
     --secondary_dark: maroon;
     --secondary_light: white;
-    --shadow_dark: darkred;
+    --shadow_dark: gray;
+    --accent: gold;
 }
 
 
-body{
+body {
     width: 90%;
     margin: 0 auto;
-    background-color:  var(--primary_dark);
+    background-color: var(--primary_dark);
     color: var(--primary_light);
     font-family: 'Bubblegum Sans', cursive;
 }
 
-.tokenDiv{
+h1,
+h2 {
+    text-shadow: 1px 1px var(--shadow_dark);
+}
+
+
+.tokenDiv {
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
 @keyframes tokenSectionOpacity {
-    from {opacity:0;}
-    to {opacity:1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-.tokenSection{
+.tokenSection {
     background-color: var(--secondary_light);
     color: var(--secondary_dark);
     display: inline-block;
     width: 250px;
-    border: 1px solid var(--primary_dark);
+    border: 5px ridge var(--accent);
     border-radius: 15px;
     text-align: center;
     animation: tokenSectionOpacity 5s;
 }
 
-.tokenImg{
+.tokenSection:hover {
+    border-color: yellow;
+}
+
+.tokenImg {
     border: 3px solid var(--primary_dark);
     border-radius: 10px;
+}
+
+.tokenImg:hover {
     box-shadow: 3px 3px var(--shadow_dark);
 }
