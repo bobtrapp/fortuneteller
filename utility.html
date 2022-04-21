@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fortune Teller Utility</title>
+    <script src="js/token.js"></script>
+    <script src="js/utility.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Utility Example</h1>
+    </header>
+    <main>
+      <p>
+        Demonstrates how to use HTML and JavaScript as a programming utility by
+        performing a text generation task within a webpage. This works because
+        HTML and JavaScript are simply text files that can be edited with any
+        text editor and then be displayed by any web browser available. You can
+        write programs to produce work even when you don't have other
+        programming tools available or have permission to use them on your
+        available system.
+      </p>
+      <p>
+        Press the "Generate" button to produce text output in the form of JSON
+        that will appear in the textarea element below. You can then copy the
+        JSON text and paste it somewhere useful.
+      </p>
+      <section id="workSection">
+        <h2>Work Section</h2>
+        <button id="generateButton" onclick="performTask()">Generate</button>
+        <br />
+        <textarea id="outputTextarea"></textarea>
+      </section>
+    </main>
+  </body>
+</html>
